@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Recipes</title>
+    <link rel="stylesheet" href="/css/details.css">
+    <link rel="website icon" type="png" href="cook.png">
+</head>
+<body>
+  <!------------- Heder Start ----->
+    <header>
+        <h1>Delicious Recipes</h1>
+        <img src="cook.png"/>
+        <nav>
+          <ul>
+            <li><a href="/html/index.html">Accueil</a></li>
+            <li><a href="/html/catalogue.html">Recette recommander</a></li>
+            <li><a href="#about">A propos</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+    </header>
+    <!-- ---------Header End-------->
+     <div id="Nom_recette"></div>
+     <div class="image">
+      <img id="img1"/>
+      <img id="img2"/>
+      <img id="img3"/>
+      <img id="img4"/>
+     </div>
+     <div class="discription">
+      <h3 id="categorie">Categorie :</h3>
+      <h3 id="country">Pays :</h3>
+      <h3 id="duree">Durée :</h3>
+     </div>
+     <div class="ing_inst">
+      <h2>Ingrédiant </h2>
+      <ol id="ingredients">
+      </ol>
+      <h2>Instruction </h2>
+      <p id="inst"></p>
+     </div>
+     <hr>
+     <div id="commentaires">
+      <h2>Commentaire</h2>
+     </div>
+     <h2 id="remarque">La note globale de la recette est :</h2>
+     <div id="note">
+      <h3></h3>
+     </div><br>
+     <a href="catalogue.html" id="link"><button class="button">Retoure au catalogue</button></a>
+     <!-------- Footer Start-------->
+     <footer>
+        <div class="footer-container">
+          <div class="footer-section">
+            <h2 id="about">About us</h2>
+            <p>We are a company specializing in web development our site will help you find recipes of any category of any country with all the details</p>
+          </div>
+          <div class="footer-section">
+            <h2 id="contact">Contact us</h2>
+            <ul>
+              <li>Adress :17 rue ALi Khoudja Bab-Ezouar Alger</li>
+              <li>Phone :+213 542 57 78 07</li>
+              <li>Email :Delicious_Recipes@gmail.com</li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h2>Follow us</h2>
+            <ul class="social-media-icons">
+              <li><a href="https://fr-fr.facebook.com/"><svg><image href="logo-facebook.svg" height="30px" weight="30px"/></svg></i></a></li>
+              <li><a href="https://www.instagram.com/"> <svg><image href="logo-instagram.svg"height="30px" weight="30px"/></svg></i></a></li>
+              <li><a href="https://twitter.com/"> <svg><image href="logo-twitter.svg"height="30px" weight="30px"/></svg></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <!-------- Footer End-------->
+      <script src="/js/recettesDB.js"></script>
+      <script src="/js/details.js"></script>   
+</body>
+</html>

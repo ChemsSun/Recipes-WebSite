@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Delicious Recipes</title>
+    <link rel="stylesheet" href="/css/catalogue.css">
+     <link rel="website icon" type="png" href="cook.png">
+</head>
+<body onload="catalogue()">
+    <header>
+        <h1>Delicious Recipes</h1>
+        <img src="cook.png"/>
+        <nav>
+          <ul>
+            <li><a href="/html/index.html">Accueil</a></li>
+            <li><a href="/html/index.html#alea">Recette recommander</a></li>
+            <li><a href="/html/index.html#h2">Catégorie</a></li>
+            <li><a href="#about">A propos</a></li>
+          </ul>
+        </nav>
+    </header>
+    <div class="re-se">
+      <div class="recherche">
+        <input type="text" id="search" onkeyup="recherche()"  placeholder="Search">
+    </div>
+    <div class="select">
+      <select id="categoryFilter" onchange="filterByCategory()">
+        <option value="Tous">Tous les Catégorie</option>
+        <option value="Petit-Déjeuner">Petit-Déjeuner</option>
+        <option value="Déjeuner">Déjeuner</option>
+        <option value="Dessert">Dessert</option>
+        <option value="Entrée">Entrée</option>
+      </select>
+    </div>
+    </div>
+    <div id="recettes">
+    </div>
+    <!-------- Footer Start-------->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h2 id="about"><A></A> Propos de nous:</h2>
+          <p>Nous sommes un groupes de devlopeurs qui ont créer ce site web pour vous aider a retrouver differentes recettes de tout type de tout les pays en details  </p>
+        </div>
+        <div class="footer-section">
+          <h2 id="contact">Nous Contacter</h2>
+          <ul>
+            <li>Adress :17 rue ALi Khoudja Bab-Ezouar Alger</li>
+            <li>Phone :+213 542 57 78 07</li>
+            <li>Email :Delicious_Recipes@gmail.com</li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h2>Retrouvez nous:</h2>
+          <ul class="social-media-icons">
+            <li><a href="https://fr-fr.facebook.com/"><svg><image href="logo-facebook.svg" height="30px" weight="30px"/></svg></i></a></li>
+            <li><a href="https://www.instagram.com/"> <svg><image href="logo-instagram.svg"height="30px" weight="30px"/></svg></i></a></li>
+            <li><a href="https://twitter.com/"> <svg><image href="logo-twitter.svg"height="30px" weight="30px"/></svg></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-------- Footer End-------->
+    <script src="/js/recettesDB.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>

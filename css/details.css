@@ -1,0 +1,381 @@
+body {
+    font-weight:bolder;
+    background-color:#fff4b3;
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+/**************Header Start************/
+  }header {
+    background-color: #ffe866;
+    padding:10px;
+    margin: 20px;
+    border-radius: 50px;
+    display: block;
+  }
+  header img{
+    position: absolute;
+    top: 25px;
+    left:40px;
+    height: 110px;
+    width: 110px;
+  }
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin:0px;
+    border-radius: 10px;
+    text-align: center;
+    text-transform:uppercase;
+    font-size: 3rem;
+  }
+  
+nav {
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    margin :15px 0px;
+  }
+  
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+    display: flex;
+  }
+  
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    margin:50px;
+    background-color: #efa720;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+nav a:hover {
+    background-color: #fff;
+    color: #fed224;
+  }
+/*********Header End***************/
+
+/*********Main Section Start***/
+#Nom_recette{
+  margin:0px 400px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size:3em;
+  border-radius:20px;
+  background-color:#ffd9042c;
+  text-align: center;
+  letter-spacing:5px;
+  color: #303026;
+  text-shadow: 2px 2px 4px #fffffd; 
+}
+.image {
+  display: flex;
+  justify-content: space-between;
+  margin:30px;
+}
+.image img {
+  height: 200px;
+  border-radius: 10Px;
+}
+.discription {
+  border: 1px solid #f3e768;
+  border-style: outset;
+  border-radius:10px;
+  background-color: #ffd9042c;
+  margin: 0px 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation:slide-in 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.discription h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+  font-size: 24px;
+  color: #333;
+  text-decoration: double;
+}
+.ing_inst{
+  margin:10px;
+  padding: 10px;
+  line-height: 1.5;
+}
+.ing_inst h2{
+  font-size:2rem;
+  color: #ab7e2a;
+  text-align: center;
+  margin:0px 500px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #ffda0986;
+}
+.ing_inst #ingredients {
+  margin-left:300px;
+  padding-left: 20px;
+}
+.ing_inst #ingredients li {
+  list-style-type:square;
+  margin-left: 30px;
+  padding:5px;
+}
+.ing_inst #inst { 
+  margin:50px 30px;
+}
+hr {
+  border: none;
+  border-top: 4px solid #e1cd18;
+  margin: 1em 12em;
+}
+
+#commentaires {
+  background-color:#e4c266;
+  padding: 20px;
+  margin:50px;
+  border-radius:20px;
+  box-shadow: 0 0 20px #00000033;
+}
+#commentaires h2{
+  font-size:2rem;
+  color: #ab7e2a;
+  text-align: center;
+  margin:0px 400px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #f0dc6a86;
+}
+#commentaires h3{
+  font-size:1.5rem;
+  margin-bottom: 5px;
+  margin-left:5px;
+  text-decoration-line: underline;
+  text-decoration-style: dotted;  
+  
+}
+.raiting-container{
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+#commentaires #raiting{
+  color:#3e3306;
+  font-size:large;
+  margin-right:50px;
+  margin-bottom: 20px;
+}
+/* #commentaires h4{
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 5px;
+  margin-left:20px;
+} */
+#commentaires p{
+  font-size: 16px;
+  line-height: 1.5;
+  margin:10px 50px;
+}
+.contenue{
+  margin:30px 0px;
+  margin-left: 250px;
+  padding:10px;
+  width:700px;
+  border-radius:10px;
+  background-color: #f7e372;
+}
+.rating {
+  font-size:30px;
+  display: inline-block;
+  color: #ffbf00;
+}
+
+.rating::before {
+  content: '\2605\2605\2605\2605\2605';
+}
+#note{ 
+  font-size:40px;
+  display: inline-block;
+  color: #ffbf00;
+  margin-left:500px;
+}
+#note::before {
+  content: '\2605\2605\2605\2605\2605';
+}
+#remarque{
+  margin-left:20px;
+  font-size: 2em;
+}
+.button{
+  color: #fff;
+  padding: 10px;
+  background-color: #866629;
+  border-color: transparent;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+.button:hover {
+  background-color: #fab60a;
+  color: #eae3c9;
+}
+#link{
+  display: flex;
+  justify-content: center;
+  margin-top:30px;
+  text-decoration: none;
+ }
+/*********Main Section End****/
+
+
+/******Footer Start************/
+footer {
+    background-color:#ffe866;
+    padding: 50px;
+    margin-top:100px;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .footer-section {
+    flex-basis: 33.33%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  
+  .footer-section h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  .social-media-icons {
+    list-style: none;
+    margin: 0;
+    padding:0;
+    display: flex;
+  }
+  
+  .social-media-icons li {
+    margin-right: 10px;
+  }
+  
+  .social-media-icons a {
+    display: block;
+    width: 45px;
+    height: 45px;
+    border-radius: 60%;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-size: 20px;
+  }
+    /******Footer End************/
+    
+
+    /* Pour les écrans de taille inférieure ou égale à 600px */
+@media (max-width: 600px) {
+  /* Réduire la taille de la police dans la barre de navigation */
+  nav ul li a {
+    font-size: 14px;
+  }
+
+  /* Centrer le texte de la barre de navigation */
+  nav ul {
+    text-align: center;
+  }
+
+  /* Masquer la deuxième et la troisième image */
+  .image img:nth-child(n+2) {
+    display: none;
+  }
+
+  /* Réduire la taille de la police dans les sections "Ingrédient" et "Instruction" */
+  .ing_inst h2 {
+    font-size: 18px;
+  }
+
+  /* Réduire la taille de la police dans la section "Commentaire" */
+  #commentaires h2 {
+    font-size: 18px;
+  }
+
+  /* Centrer le texte dans la section "Commentaire" */
+  #commentaires {
+    text-align: center;
+  }
+
+  /* Réduire la taille de la police dans la section "La note globale de la recette est :" */
+  #remarque {
+    font-size: 18px;
+  }
+
+  /* Réduire la taille de la police dans la section "Retour au catalogue" */
+  #link {
+    font-size: 14px;
+  }
+}
+
+/* Pour les écrans de taille supérieure à 600px */
+@media (min-width: 601px) {
+  /* Réduire la taille de la police dans la barre de navigation */
+  nav ul li a {
+    font-size: 16px;
+  }
+
+  /* Afficher toutes les images */
+  .image img {
+    display: block;
+  }
+
+  /* Réduire la taille de la police dans les sections "Ingrédient" et "Instruction" */
+  .ing_inst h2 {
+    font-size: 24px;
+  }
+
+  /* Réduire la taille de la police dans la section "Commentaire" */
+  #commentaires h2 {
+    font-size: 24px;
+  }
+
+  /* Réduire la taille de la police dans la section "La note globale de la recette est :" */
+  #remarque {
+    font-size: 24px;
+  }
+
+  /* Réduire la taille de la police dans la section "Retour au catalogue" */
+  #link {
+    font-size: 16px;
+  }
+}
+

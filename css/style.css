@@ -1,0 +1,348 @@
+body {
+    font-weight:bolder;
+    background-color:#fff4b3;
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  /****************************************************NavBar**************************/
+header {
+    background-color: #ffe866;
+    padding:10px;
+    margin: 20px;
+    border-radius: 50px;
+    display: block;
+  }
+  header img{
+    position: absolute;
+    top: 25px;
+    left:40px;
+    height: 110px;
+    width: 110px;
+  }
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin:0px;
+    border-radius: 10px;
+    text-align: center;
+    text-transform:uppercase;
+    font-size: 3rem;
+  }
+  
+nav {
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    margin :15px 0px;
+  }
+  
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+    display: flex;
+  }
+  
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    margin:50px;
+    background-color: #efa720;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+nav a:hover {
+    background-color: #fff;
+    color: #fed224;
+  }
+/*****************************************Page container Start******************************/
+main {
+    margin:0;
+  }
+.hero>h1{
+    color: #f1b038;
+    margin: 10px;
+    text-transform: uppercase;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3rem;
+    letter-spacing: 6px;
+    padding:0;
+  }
+.hero>h2{
+    padding-right: 12%;
+    font-style: italic;
+    font-weight:bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    margin:1px;
+    text-align: left;
+  }
+.hero>p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+  }
+hr{
+    border-color:#FFB52B;
+    border-width: 2px;
+    border-style: solid;
+  }
+.hero>#im{
+    border-radius: 50px;
+    box-shadow: 30px 10px 30px #f1b03886;
+    height:400px;
+    position:absolute;
+    top:160pX;
+    right:650px;
+    display: flex;
+  }
+  .hero {
+    height: 300px;
+    width: 450px;
+    padding-right: 10%;
+    margin:50px 650px;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:right;
+  }
+  /*****************************************Page container End******************************/
+  /*****************************************Footer Start***********************************/
+  footer {
+    background-color:#ffe866;
+    padding: 50px;
+    margin-top:100px;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+  
+  .footer-section {
+     flex-basis: 33.33%;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  
+  .footer-section h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  .social-media-icons {
+    /* list-style: none;
+    margin: 0;
+    padding:0; */
+    display: flex;
+    width: 200px;
+  }
+  
+  .social-media-icons li {
+    margin-right: 10px;
+  }
+  
+  .social-media-icons a {
+    display: block;
+    width: 45px;
+    height: 45px;
+    border-radius: 60%;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-size: 20px;
+  }
+  /*****************************************Footer End***********************************/
+  /*****************************************Category Start*******************************/
+  .categorie{
+    border-radius: 50px;
+    background-color:#ffe866;
+    display: flex;
+    height: 50px;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-left:350px;
+    margin-right:200px;
+    font-size: x-large;
+    color: #d17600;
+  }
+  .disc{
+    height: 130px;
+    width: 500px;
+    margin: 0 auto;
+    font-weight:bold;
+    font-size: 20px;
+    text-align:center;
+    display: block;
+    
+  }
+  .button{
+    color: #fff;
+    padding: 10px;
+    background-color: #866629;
+    border-color: transparent;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  .button:hover {
+    background-color: #fab60a;
+    color: #eae3c9;
+  }
+ .catalogue{
+     display: flex;
+     justify-content: right;
+     justify-content: space-between;
+ }
+ .c1{
+    border: 1px solid;
+    box-shadow: 30px 10px 30px #f1b03886;
+    border-color:#fab60a;
+    border-radius:20px;
+    display:grid;
+    justify-items:last baseline;
+    background-color: #fff;
+    margin: 20px;
+ }
+ .c1 img{
+     border-radius:20px;
+     height:200px;
+     width: 200px;
+     margin: 10px;
+ }
+ .c2{
+  border: 1px solid;
+  box-shadow: 20px 10px 30px #f1b03886;
+  border-color:#fab60a;
+  border-radius: 20px;
+  display: grid;
+  justify-items:last baseline;
+  background-color: #fff;
+  margin: 20px;
+   transition: width 3s, height 3s, transform 3s;
+ }
+ .c2 img{
+  border-radius:20px;
+  height:200px;
+  width: 200px;
+  margin: 10px;
+}
+.c3{
+  border: 1px solid;
+  box-shadow: 20px 10px 30px #f1b03886;
+  border-color:#fab60a;
+  border-radius: 20px;
+  display: grid;
+  justify-items:last baseline;
+  background-color: #fff;
+  margin: 20px;
+  transition: width 3s, height 3s, transform 3s;
+ }
+ .c3 img{
+  border-radius:20px;
+  height:200px;
+  width: 200px;
+  margin: 10px;
+  transition: width 3s, height 3s, transform 3s;
+}
+.c4{
+  border: 1px solid;
+  box-shadow:20px 10px 30px #f1b03886;
+  border-color:#fab60a;
+    border-radius: 20px;
+    display: grid;
+    justify-items:last baseline;
+    background-color: #fff;
+    margin: 20px;
+    transition: width 3s, height 3s, transform 3s;
+}
+.c4 img{
+  border-radius:20px;
+    height:200px;
+    width: 200px;
+    margin: 10px;
+    transition: width 3s, height 3s, transform 3s;
+}
+/*****************************************Category End******************************/
+/*****************************************Debut Recette aleatoire*******************/
+ .aleatoire{
+   margin-top:50px;
+   margin-left: 20px;
+   display: flex;
+   justify-content: space-around;
+ }
+#recette-name{
+  color:#d17600;
+  text-align: center;
+  font-size:2em;
+  margin:5px;
+  width:220px;
+}
+#recette-image{
+  height:250px;
+  width:250px;
+  border-radius: 15px;
+}
+#category-recette{
+  font-size:1.5rem;
+  text-align: center;
+  margin:0px;
+  color: #d176009d;
+}
+.recette{
+  padding:10px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+#alea{
+    border-radius: 50px;
+    background-color:#ffe866;
+    display: flex;
+    height: 50px;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-left:350px;
+    margin-right:200px;
+    font-size:2rem;
+    color: #d17600;
+}
+/*****************************************Fin Recette Aleatoire********************/
+/* Responsive */
+/* Style pour les écrans de taille inférieure à 1024px */
+@media screen and (max-width: 1023px) {
+  /* Style pour le header */
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  h1 {
+    font-size: 36px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  nav {
+    margin-top: 20px;
+  }
+}
